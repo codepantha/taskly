@@ -80,6 +80,10 @@
   border: none;
 }
 
+.dash {
+  text-decoration: line-through;
+}
+
 @media (max-width: 1200px) {
   .todos {
     flex-direction: row;
