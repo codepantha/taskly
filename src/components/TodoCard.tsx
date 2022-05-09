@@ -16,15 +16,15 @@ const TodoCard: React.FC<Props> = ({ todo, todos, setTodos }: Props) => {
       <span className="todos__single--text">{todo.name}</span>
 
       <div>
-        <span className="icon">
+        <button type="button" className="icon">
           <AiFillEdit />
-        </span>
-        <span className="icon">
+        </button>
+        <button type="button" className="icon">
           <AiFillDelete />
-        </span>
-        <span className="icon">
+        </button>
+        <button type="button" className="icon">
           <MdDone />
-        </span>
+        </button>
       </div>
     </form>
   )
