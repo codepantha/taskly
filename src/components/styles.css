@@ -44,6 +44,19 @@
   box-shadow: 0 0 5px black;
 }
 
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.todos__heading {
+  font-size: 30px;
+  color: #fff;
+}
+
 .todos {
   border-radius: 5px;
   display: flex;
@@ -62,6 +75,11 @@
   margin-top: 15px;
   background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
   transition: 0.2s;
+}
+
+.todos__single:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .todos__single--text {
@@ -86,13 +104,9 @@
 
 @media (max-width: 1200px) {
   .todos {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-
-  .todos__single {
-    width: 45%;
   }
 }
 
@@ -104,7 +118,14 @@
     width: 95%;
     margin-bottom: 10px;
   }
-  .todos__single {
-    width: 100%;
+
+  .container {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
   }
+}
+
+.remove {
+  background-color: rgb(235, 103, 80);
 }
